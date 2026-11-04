@@ -1,0 +1,166 @@
+{
+  "version": "0.9",
+  "schemaVersion": 1,
+  "activeTrack": "undergraduate",
+  "tracks": {
+    "undergraduate": {
+      "label": "Undergraduate",
+      "enabled": true
+    },
+    "graduate": {
+      "label": "Master’s",
+      "enabled": true
+    },
+    "doctoral": {
+      "label": "PhD",
+      "enabled": false
+    }
+  },
+  "cities": [
+    "Houston",
+    "Beaumont",
+    "Lake Charles",
+    "Lafayette",
+    "Baton Rouge",
+    "New Orleans"
+  ],
+  "aliases": [
+    [
+      "health care",
+      "healthcare"
+    ],
+    [
+      "human resources",
+      "hr"
+    ],
+    [
+      "learning and development",
+      "learning development",
+      "l&d",
+      "training"
+    ],
+    [
+      "oil and gas",
+      "oil gas",
+      "petroleum"
+    ],
+    [
+      "recruiting",
+      "recruitment",
+      "recruiter",
+      "talent acquisition"
+    ],
+    [
+      "onboarding",
+      "on boarding"
+    ],
+    [
+      "defense",
+      "defence"
+    ],
+    [
+      "benefit",
+      "benefits"
+    ],
+    [
+      "intern",
+      "internship",
+      "internships"
+    ]
+  ],
+  "metros": {
+    "Houston": [
+      "Houston",
+      "Pasadena",
+      "Baytown",
+      "Sugar Land",
+      "Katy",
+      "Pearland",
+      "League City",
+      "The Woodlands",
+      "Spring",
+      "Conroe",
+      "Tomball",
+      "Deer Park",
+      "Texas City",
+      "Galveston",
+      "Lake Jackson",
+      "Freeport",
+      "Humble",
+      "Channelview"
+    ],
+    "Beaumont": [
+      "Beaumont",
+      "Port Arthur",
+      "Orange",
+      "Nederland",
+      "Port Neches",
+      "Bridge City",
+      "Lumberton",
+      "Silsbee",
+      "Vidor"
+    ],
+    "Lake Charles": [
+      "Lake Charles",
+      "Sulphur",
+      "Westlake",
+      "Moss Bluff",
+      "Iowa",
+      "DeQuincy",
+      "Vinton"
+    ],
+    "Lafayette": [
+      "Lafayette",
+      "Broussard",
+      "Youngsville",
+      "Scott",
+      "Carencro",
+      "New Iberia",
+      "Abbeville",
+      "Breaux Bridge",
+      "St. Martinville",
+      "Opelousas"
+    ],
+    "Baton Rouge": [
+      "Baton Rouge",
+      "Gonzales",
+      "Prairieville",
+      "Geismar",
+      "Denham Springs",
+      "Walker",
+      "Zachary",
+      "Baker",
+      "Central",
+      "Port Allen",
+      "Plaquemine",
+      "St. Francisville",
+      "Jackson"
+    ],
+    "New Orleans": [
+      "New Orleans",
+      "Metairie",
+      "Kenner",
+      "Slidell",
+      "Covington",
+      "Mandeville",
+      "Gretna",
+      "Harvey",
+      "Marrero",
+      "Chalmette",
+      "Belle Chasse",
+      "LaPlace",
+      "Luling",
+      "Destrehan",
+      "Garyville",
+      "Harahan"
+    ]
+  },
+  "masterFamilies": {
+    "learning": "Learning and Development",
+    "acquisition": "Talent Acquisition",
+    "relations": "Employee Relations",
+    "rewards": "Compensation and Benefits",
+    "talent": "Talent and Performance Management",
+    "od": "Organizational Development and Change"
+  }
+}

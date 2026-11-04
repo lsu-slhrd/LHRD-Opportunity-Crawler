@@ -1,0 +1,32 @@
+name: Crawl job boards
+
+on:
+  schedule:
+    - cron: '0 11 * * *'   # daily, 6 AM Central (standard time)
+  workflow_dispatch: {}     # "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Crawl
+        run: node crawler/crawl.mjs
+      - name: Commit feed if it changed
+        run: |
+          git config user.name  "lhrd-crawler-bot"
+          git config user.email "lhrd-crawler-bot@users.noreply.github.com"
+          git add docs/feed.json
+          git diff --cached --quiet || git commit -m "Update feed $(date -u +%F)"
+          git push

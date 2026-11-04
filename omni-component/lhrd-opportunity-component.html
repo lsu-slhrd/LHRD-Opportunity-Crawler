@@ -1,0 +1,175 @@
+<!-- LHRD Opportunity Engine: live feed component for Omni CMS.
+     Paste this whole block into the component's source. Set data-feed below to your feed.json URL. -->
+<div id="lhrd-oe" data-feed="https://YOUR-GITHUB-USERNAME.github.io/LHRD-Opportunity-Crawler/feed.json">
+  <style>
+    #lhrd-oe{--p:#461D7C;--p2:#2e1352;--g:#FDD023;--ink:#1f1f1f;--muted:#5b5b66;--line:#dcd7e6;--bg:#fff;--soft:#f6f3fa;font-family:"proxima-nova",Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.45;max-width:1200px;margin:0 auto;padding:16px;background:var(--bg);text-align:left}
+    #lhrd-oe *{box-sizing:border-box}
+    #lhrd-oe .oe-tabs{display:flex;gap:.25rem;border-bottom:3px solid var(--p);margin-bottom:1rem;flex-wrap:wrap}
+    #lhrd-oe .oe-tab{appearance:none;border:0;background:var(--soft);color:var(--p);font:inherit;font-weight:700;padding:.65rem 1.1rem;border-radius:6px 6px 0 0;cursor:pointer}
+    #lhrd-oe .oe-tab[aria-selected="true"]{background:var(--p);color:#fff}
+    #lhrd-oe .oe-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.75rem;background:var(--soft);padding:1rem;border-radius:8px}
+    #lhrd-oe label{display:block;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--p2);margin-bottom:.25rem}
+    #lhrd-oe input,#lhrd-oe select{width:100%;font:inherit;padding:.55rem .6rem;border:1px solid #b9b0c9;border-radius:6px;background:#fff;color:var(--ink)}
+    #lhrd-oe input:focus,#lhrd-oe select:focus,#lhrd-oe button:focus-visible,#lhrd-oe a:focus-visible{outline:3px solid var(--g);outline-offset:2px}
+    #lhrd-oe .oe-metros{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0 .5rem}
+    #lhrd-oe .oe-metro{appearance:none;font:inherit;font-size:.9rem;border:1px solid var(--p);background:#fff;color:var(--p);border-radius:999px;padding:.35rem .8rem;cursor:pointer}
+    #lhrd-oe .oe-metro[aria-pressed="true"]{background:var(--p);color:#fff}
+    #lhrd-oe .oe-metro span{display:inline-block;min-width:1.4em;margin-left:.35rem;padding:0 .35rem;border-radius:999px;background:var(--g);color:var(--p2);font-weight:700;font-size:.8rem}
+    #lhrd-oe .oe-bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin:.5rem 0 1rem}
+    #lhrd-oe .oe-count{font-size:1.25rem;font-weight:800;color:var(--p2);margin:0}
+    #lhrd-oe .oe-reset{appearance:none;font:inherit;border:0;background:none;color:var(--p);text-decoration:underline;cursor:pointer;padding:0}
+    #lhrd-oe .oe-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem}
+    #lhrd-oe .oe-card{border:1px solid var(--line);border-top:5px solid var(--p);border-radius:8px;padding:1rem 1.1rem;background:var(--bg);display:flex;flex-direction:column;gap:.35rem}
+    #lhrd-oe .oe-card.auto{border-top-color:var(--g)}
+    #lhrd-oe .oe-top{display:flex;justify-content:space-between;gap:.5rem;align-items:flex-start}
+    #lhrd-oe .oe-employer{font-weight:700;color:var(--p2)}
+    #lhrd-oe .oe-pill{font-size:.72rem;font-weight:700;padding:.15rem .5rem;border-radius:999px;white-space:nowrap;background:var(--soft);color:var(--p)}
+    #lhrd-oe .oe-badge{font-size:.78rem;color:var(--muted);margin:0}
+    #lhrd-oe .oe-badge b{color:var(--p)}
+    #lhrd-oe .oe-card.auto .oe-badge b{color:#7a5d00}
+    #lhrd-oe h3{font-size:1.1rem;line-height:1.25;margin:.15rem 0;color:var(--ink)}
+    #lhrd-oe .oe-loc{margin:0;color:var(--muted);font-size:.92rem}
+    #lhrd-oe .oe-meta{display:flex;flex-wrap:wrap;gap:.3rem;margin:.2rem 0}
+    #lhrd-oe .oe-meta span{font-size:.78rem;border:1px solid var(--line);border-radius:4px;padding:.1rem .4rem}
+    #lhrd-oe .oe-card p{margin:.15rem 0;font-size:.92rem}
+    #lhrd-oe .oe-apply{margin-top:auto;align-self:flex-start;display:inline-block;background:var(--p);color:#fff;text-decoration:none;font-weight:700;padding:.5rem 1rem;border-radius:999px}
+    #lhrd-oe .oe-apply:hover{background:var(--p2)}
+    #lhrd-oe .oe-empty,#lhrd-oe .oe-status{padding:1.25rem;background:var(--soft);border-radius:8px}
+    #lhrd-oe .oe-foot{margin-top:1.25rem;font-size:.82rem;color:var(--muted)}
+    #lhrd-oe .oe-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+    @media (max-width:600px){#lhrd-oe .oe-cards{grid-template-columns:1fr}#lhrd-oe .oe-tab{flex:1}}
+  </style>
+
+  <div class="oe-tabs" role="tablist" aria-label="Student track">
+    <button class="oe-tab" role="tab" type="button" data-track="undergraduate" aria-selected="true">Undergraduate</button>
+    <button class="oe-tab" role="tab" type="button" data-track="graduate" aria-selected="false">Master’s</button>
+  </div>
+
+  <div class="oe-controls">
+    <div><label for="oe-q">Search</label><input id="oe-q" type="search" placeholder="Employer, title, or skill" autocomplete="off"></div>
+    <div><label for="oe-area">Metro area</label><select id="oe-area"></select></div>
+    <div data-for="undergraduate"><label for="oe-type">Opportunity type</label><select id="oe-type"><option value="">All types</option><option>Internship</option><option>Entry level</option></select></div>
+    <div><label for="oe-focus">Career focus</label><select id="oe-focus"><option value="">All</option><option value="HRD">HRD</option><option value="HRM">HRM</option><option value="Blended">Blended</option></select></div>
+    <div data-for="graduate"><label for="oe-family">HR function</label><select id="oe-family"></select></div>
+    <div data-for="graduate"><label for="oe-level">Level</label><select id="oe-level"></select></div>
+    <div><label for="oe-origin">Listings</label><select id="oe-origin"><option value="">All listings</option><option value="curated">Verified by LHRD</option><option value="crawled">Auto-discovered</option><option value="new">New this week</option></select></div>
+  </div>
+
+  <div class="oe-metros" role="group" aria-label="Filter by metro"></div>
+  <div class="oe-bar"><p class="oe-count" aria-live="polite">Loading opportunities…</p><button class="oe-reset" type="button">Reset filters</button></div>
+  <div class="oe-cards"></div>
+  <div class="oe-empty" hidden>No opportunities match these filters. <button class="oe-reset" type="button">Clear filters</button></div>
+  <p class="oe-foot"></p>
+  <noscript><p class="oe-status">This directory needs JavaScript to load current listings.</p></noscript>
+
+  <script>
+  (function () {
+    var root = document.getElementById('lhrd-oe');
+    if (!root || root.dataset.ready) return;
+    root.dataset.ready = '1';
+    var $ = function (s) { return root.querySelector(s); };
+    var $$ = function (s) { return Array.prototype.slice.call(root.querySelectorAll(s)); };
+    var state = { track: 'undergraduate', items: [], feed: null };
+    var el = { q: $('#oe-q'), area: $('#oe-area'), type: $('#oe-type'), focus: $('#oe-focus'), family: $('#oe-family'), level: $('#oe-level'), origin: $('#oe-origin') };
+
+    function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+    function safeURL(u) { try { var x = new URL(u); return /^https?:$/.test(x.protocol) ? x.href : '#'; } catch (e) { return '#'; } }
+    function dateLabel(d) { if (!d) return ''; var t = new Date(d + 'T12:00:00'); return isNaN(t) ? d : t.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); }
+    function norm(s) { return String(s == null ? '' : s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, ' ').trim(); }
+    var aliasRules = [];
+    function canonical(s) { var t = ' ' + norm(s) + ' '; aliasRules.forEach(function (r) { t = t.split(' ' + r.from + ' ').join(' ' + r.to + ' '); }); return t.trim(); }
+    var today = new Date().toISOString().slice(0, 10);
+    var weekAgo = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
+
+    function haystack(o) { return canonical([o.title, o.employer, o.location, o.locality, o.area, o.type, o.level, o.focus, o.workMode, o.summary, o.eligibility, (state.feed.masterFamilies || {})[o.family], (o.industries || []).join(' '), (o.tags || []).join(' '), (o.skills || []).join(' ')].join(' ')).split(' '); }
+    function matches(o, area) {
+      if (o.tracks.indexOf(state.track) < 0 || o.status !== 'open' || (o.deadlineISO && o.deadlineISO < today)) return false;
+      var terms = canonical(el.q.value).split(' ').filter(Boolean);
+      if (terms.length) { var tok = o._tok || (o._tok = haystack(o)); if (!terms.every(function (t) { return tok.some(function (k) { return k === t || (t.indexOf('concept') !== 0 && t.length >= 3 && k.indexOf(t) === 0); }); })) return false; }
+      if (area && o.area !== area) return false;
+      if (el.focus.value && o.focus !== el.focus.value) return false;
+      var org = el.origin.value;
+      if (org === 'new' ? !(o.firstSeenAt && o.firstSeenAt >= weekAgo) : org && o.origin !== org) return false;
+      if (state.track === 'undergraduate') { if (el.type.value && o.type !== el.type.value) return false; }
+      else { if (el.family.value && o.family !== el.family.value) return false; if (el.level.value && o.level !== el.level.value) return false; }
+      return true;
+    }
+
+    function card(o) {
+      var auto = o.origin === 'crawled';
+      var fam = (state.feed.masterFamilies || {})[o.family];
+      var badge = auto
+        ? '<b>Auto-discovered</b> · on employer site ' + esc(dateLabel(o.lastSeenAt)) + ' · not yet reviewed by LHRD'
+        : '<b>Verified by LHRD</b> ' + esc(dateLabel(o.verifiedAt)) + (o.lastSeenAt ? ' · still listed ' + esc(dateLabel(o.lastSeenAt)) : '');
+      var meta = [state.track === 'undergraduate' ? o.type : o.level, o.workMode && o.workMode !== 'Not specified' ? o.workMode : '', state.track === 'graduate' ? fam : (o.industries || []).join(', ')].filter(Boolean);
+      return '<article class="oe-card' + (auto ? ' auto' : '') + '">' +
+        '<div class="oe-top"><span class="oe-employer">' + esc(o.employer) + '</span><span class="oe-pill">' + esc(o.focus) + '</span></div>' +
+        '<p class="oe-badge">' + badge + '</p>' +
+        '<h3>' + esc(o.title) + '</h3>' +
+        '<p class="oe-loc">' + esc(o.location) + '</p>' +
+        (meta.length ? '<div class="oe-meta">' + meta.map(function (m) { return '<span>' + esc(m) + '</span>'; }).join('') + '</div>' : '') +
+        (o.summary ? '<p>' + esc(o.summary) + '</p>' : '') +
+        (o.eligibility ? '<p><strong>Eligibility:</strong> ' + esc(o.eligibility) + '</p>' : '') +
+        (o.salary && o.salary !== 'Not posted' ? '<p><strong>Salary:</strong> ' + esc(o.salary) + '</p>' : '') +
+        (o.deadlineISO ? '<p><strong>Deadline:</strong> ' + esc(dateLabel(o.deadlineISO)) + '</p>' : '') +
+        '<a class="oe-apply" href="' + esc(safeURL(o.url)) + '" target="_blank" rel="noopener noreferrer">View on employer site<span class="oe-sr"> (opens in new tab)</span> ↗</a>' +
+        '</article>';
+    }
+
+    function fillSelect(sel, label, values, labels) {
+      var cur = sel.value;
+      sel.innerHTML = '<option value="">' + esc(label) + '</option>' + values.map(function (v) { return '<option value="' + esc(v) + '">' + esc(labels ? labels[v] || v : v) + '</option>'; }).join('');
+      sel.value = values.indexOf(cur) >= 0 ? cur : '';
+    }
+
+    function render() {
+      $$('[data-for]').forEach(function (d) { d.hidden = d.getAttribute('data-for') !== state.track; });
+      $$('.oe-tab').forEach(function (t) { t.setAttribute('aria-selected', String(t.dataset.track === state.track)); });
+      var area = el.area.value;
+      var found = state.items.filter(function (o) { return matches(o, area); });
+      $('.oe-count').textContent = found.length + ' ' + (found.length === 1 ? 'opportunity' : 'opportunities') + (area ? ' · ' + area.replace(' area', ' metro') : '');
+      $('.oe-cards').innerHTML = found.map(card).join('');
+      $('.oe-empty').hidden = found.length > 0;
+      $$('.oe-metro').forEach(function (b) {
+        var n = state.items.filter(function (o) { return matches(o, b.dataset.area); }).length;
+        b.querySelector('span').textContent = n;
+        b.setAttribute('aria-pressed', String(b.dataset.area === area));
+        b.setAttribute('aria-label', b.dataset.area.replace(' area', ' metro') + ': ' + n + ' matching');
+      });
+    }
+    function reset() { Object.keys(el).forEach(function (k) { el[k].value = ''; }); render(); }
+
+    function init(feed) {
+      state.feed = feed;
+      state.items = feed.items || [];
+      aliasRules = (feed.aliases || []).reduce(function (all, group, i) { return all.concat(group.map(function (a) { return { from: norm(a), to: 'concept' + i }; })); }, []).sort(function (a, b) { return b.from.length - a.from.length; });
+      var cities = feed.cities || [];
+      el.area.innerHTML = '<option value="">Entire corridor</option>' + cities.map(function (c) { return '<option value="' + esc(c) + ' area">' + esc(c) + ' metro</option>'; }).join('');
+      $('.oe-metros').innerHTML = cities.map(function (c) { return '<button type="button" class="oe-metro" data-area="' + esc(c) + ' area" aria-pressed="false">' + esc(c) + '<span></span></button>'; }).join('');
+      var fams = feed.masterFamilies || {};
+      fillSelect(el.family, 'All functions', Object.keys(fams), fams);
+      var order = ['Internship', 'Entry level', 'Professional', 'Analyst', 'Experienced specialist', 'Senior', 'Senior specialist', 'Senior generalist', 'Advisor', 'Senior advisor', 'Business partner', 'Senior business partner', 'Lead business partner', 'Manager', 'Director'];
+      var levels = state.items.filter(function (o) { return o.tracks.indexOf('graduate') >= 0 && o.level; }).map(function (o) { return o.level; })
+        .filter(function (v, i, a) { return a.indexOf(v) === i; }).sort(function (a, b) { var x = order.indexOf(a), y = order.indexOf(b); return (x < 0 ? 99 : x) - (y < 0 ? 99 : y) || a.localeCompare(b); });
+      fillSelect(el.level, 'All levels', levels);
+      $$('.oe-metro').forEach(function (b) { b.addEventListener('click', function () { el.area.value = el.area.value === b.dataset.area ? '' : b.dataset.area; render(); }); });
+      var updated = feed.generatedAt ? new Date(feed.generatedAt).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' }) : 'unknown';
+      $('.oe-foot').innerHTML = 'Listings updated ' + esc(updated) + '. <b>Verified</b> listings were reviewed by LHRD staff. <b>Auto-discovered</b> listings are read daily from employer job boards and filtered for HR roles in the Houston–New Orleans corridor; they have not been reviewed, so confirm eligibility and details on the employer site. Applications are submitted on employer sites; this page collects nothing.';
+      render();
+    }
+
+    el.q.addEventListener('input', render);
+    ['area', 'type', 'focus', 'family', 'level', 'origin'].forEach(function (k) { el[k].addEventListener('change', render); });
+    $$('.oe-reset').forEach(function (b) { b.addEventListener('click', reset); });
+    $$('.oe-tab').forEach(function (t) { t.addEventListener('click', function () { state.track = t.dataset.track; render(); }); });
+
+    fetch(root.getAttribute('data-feed'), { cache: 'no-cache' })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(init)
+      .catch(function () {
+        $('.oe-count').textContent = '';
+        $('.oe-cards').innerHTML = '<div class="oe-status" role="alert">Current listings could not be loaded. Please try again later.</div>';
+      });
+  })();
+  </script>
+</div>

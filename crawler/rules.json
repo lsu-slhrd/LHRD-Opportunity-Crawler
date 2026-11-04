@@ -1,0 +1,36 @@
+{
+  "_comment": "Title-matching rules the crawler uses to decide what counts as an HR/HRD role and how to label it. All patterns are case-insensitive regular expressions matched against the job title.",
+  "hr": {
+    "strong": "\\b(human resources?|hr|hris|hrbp|hrd|people (operations|partner|experience|services|and culture|& culture)|recruit(er|ers|ing|ment)|talent (acquisition|management|development|partner|sourc\\w*)|sourcer|staffing|onboarding|employee (relations|development|experience|engagement|services)|labor relations|organi[sz]ational (development|design|effectiveness|change)|change management|compensation|total rewards|benefits (specialist|analyst|coordinator|administrator|manager|partner)|learning (and|&) development|l&d|instructional design\\w*|workforce development)\\b",
+    "weak": "\\b(training|trainer|learning|talent|benefits|payroll|leadership development|culture)\\b",
+    "excludeWhenWeak": "\\b(machine learning|engineer\\w*|athletic|personal trainer|nurse|rn|lpn|physician|therapist|technician|operator|mechanic|electrician|driver|sales|account executive|cell culture|clinical|pilot|teacher|software|data scien\\w*)\\b",
+    "excludeAlways": "\\b(medical assistant|patient|pharmac\\w*|chef|cook|security officer|police|firefighter|enforcement|corrections? officer|cadet)\\b"
+  },
+  "type": {
+    "Internship": "\\b(intern|internship|co-?op|apprentice\\w*)\\b",
+    "Entry level": "\\b(entry|coordinator|assistant|associate|clerk|trainee|representative|generalist i|specialist i|analyst i|technician i|level i|new grad\\w*)\\b"
+  },
+  "level": {
+    "Director": "\\b(director|head of|vice president|vp|chief|cpo|chro)\\b",
+    "Manager": "\\b(manager|supervisor|lead)\\b",
+    "Senior": "\\b(senior|sr\\.?|principal|advanced|staff|ii|iii|iv|2|3|business partner|hrbp|advisor|consultant)\\b"
+  },
+  "family": {
+    "learning": "\\b(learning|training|trainer|l&d|instructional|curriculum|development specialist|employee development|leadership development|facilitat\\w*)\\b",
+    "acquisition": "\\b(recruit\\w*|talent acquisition|sourc\\w*|staffing|onboarding|campus)\\b",
+    "rewards": "\\b(compensation|benefits?|total rewards|payroll|pay)\\b",
+    "od": "\\b(organi[sz]ational|change|effectiveness|culture|engagement|design)\\b",
+    "talent": "\\b(talent management|performance|succession|talent development)\\b",
+    "relations": "\\b(employee relations|labor|relations|business partner|hrbp|generalist|investigat\\w*|discipline)\\b"
+  },
+  "focusByFamily": {
+    "learning": "HRD",
+    "od": "HRD",
+    "talent": "HRD",
+    "acquisition": "HRM",
+    "rewards": "HRM",
+    "relations": "HRM"
+  },
+  "graceDays": 3,
+  "summaryLength": 280
+}
