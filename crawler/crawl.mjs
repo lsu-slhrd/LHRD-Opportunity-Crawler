@@ -5,7 +5,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { adapters, stripHTML } from './adapters.mjs';
+import { adapters, stripHTML, checkPosting } from './adapters.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const args = process.argv.slice(2);
@@ -84,8 +84,9 @@ for (const src of active) {
   try {
     const read = adapters[src.adapter];
     if (!read) throw new Error(`Unknown adapter "${src.adapter}"`);
-    const raw = await read(src);
+    const raw = await read(src, { isRelevant: isHR });
     entry.fetched = raw.length;
+    const urlsTaken = new Set();
     for (const p of raw) {
       if (!p.title || !p.url || !isHR(p.title)) continue;
       entry.hr++;
@@ -94,7 +95,8 @@ for (const src of active) {
       if (p.deadlineISO && p.deadlineISO < today) continue;
       const c = classify(p.title);
       const id = `auto-${slug(src.employer)}-${slug(p.title)}-${slug(place.locality)}`;
-      if (crawled.has(id)) continue;
+      if (crawled.has(id) || urlsTaken.has(urlKey(p.url))) continue;
+      urlsTaken.add(urlKey(p.url));
       entry.inCorridor++;
       crawled.set(id, {
         id, origin: 'crawled', title: p.title.trim(), employer: src.employer,
@@ -134,21 +136,49 @@ const crawledByUrl = new Map([...crawled.values()].map(c => [urlKey(c.url), c]))
 const crawledByDup = new Map([...crawled.values()].map(c => [dupKey(c.employer, c.title, c.locality), c]));
 for (const o of curated) {
   const match = crawledByUrl.get(urlKey(o.url)) || crawledByDup.get(dupKey(o.employer, o.title, o.locality));
-  if (match) { o.lastSeenAt = match.lastSeenAt; crawled.delete(match.id); }
+  if (match && match.lastSeenAt === today) { o.lastSeenAt = today; o.liveSeenOnBoard = true; crawled.delete(match.id); }
+  else if (match) crawled.delete(match.id);
 }
 
-const items = [...curated, ...crawled.values()].sort((a, b) => (a.origin === b.origin ? 0 : a.origin === 'curated' ? -1 : 1) || String(b.postedAt || b.verifiedAt || '').localeCompare(String(a.postedAt || a.verifiedAt || '')));
+// ---------- liveness: open each verified posting (and each auto find not seen today) and drop the closed ones ----------
+const staleBefore = new Date(Date.now() - (rules.curatedMaxAgeDays || 45) * 864e5).toISOString().slice(0, 10);
+const toCheck = [...curated.filter(o => !o.liveSeenOnBoard), ...[...crawled.values()].filter(c => c.lastSeenAt !== today)];
+const removed = [];
+const queue = [...toCheck];
+await Promise.all(Array.from({ length: 4 }, async () => {
+  while (queue.length) {
+    const item = queue.shift();
+    const result = await checkPosting(item.url, item.title);
+    item.checkedAt = today;
+    item.checkState = result.state;
+    if (result.state === 'closed') {
+      item.status = 'closed';
+      removed.push({ id: item.id, origin: item.origin, employer: item.employer, title: item.title, url: item.url, reason: result.reason });
+    } else if (result.state === 'open') item.lastSeenAt = today;
+    else if (item.origin === 'curated' && item.verifiedAt && item.verifiedAt < staleBefore) {
+      // the page can't be read automatically and nobody has re-verified it recently
+      item.status = 'closed';
+      removed.push({ id: item.id, origin: item.origin, employer: item.employer, title: item.title, url: item.url, reason: `could not confirm it is open, and last verified ${item.verifiedAt} (${result.reason})` });
+    }
+  }
+}));
+for (const o of curated) delete o.liveSeenOnBoard;
+for (const r of removed) { crawled.delete(r.id); console.log(`removed  ${r.employer} | ${r.title}  (${r.reason})`); }
+const openCurated = curated.filter(o => o.status === 'open');
+
+const items = [...openCurated, ...crawled.values()].sort((a, b) => (a.origin === b.origin ? 0 : a.origin === 'curated' ? -1 : 1) || String(b.postedAt || b.verifiedAt || '').localeCompare(String(a.postedAt || a.verifiedAt || '')));
 const feed = {
   generatedAt: new Date().toISOString(),
   schemaVersion: 1,
   cities: config.cities,
   aliases: config.aliases,
   masterFamilies: config.masterFamilies,
-  counts: { total: items.length, curated: curated.length, crawled: crawled.size, undergraduate: items.filter(i => i.tracks.includes('undergraduate')).length, graduate: items.filter(i => i.tracks.includes('graduate')).length },
+  counts: { total: items.length, curated: openCurated.length, crawled: crawled.size, removed: removed.length, undergraduate: items.filter(i => i.tracks.includes('undergraduate')).length, graduate: items.filter(i => i.tracks.includes('graduate')).length },
   sources: report,
+  removed,
   items,
 };
 await mkdir(dirname(outPath), { recursive: true });
 await writeFile(outPath, JSON.stringify(feed, null, 1) + '\n');
-console.log(`\nWrote ${outPath}: ${feed.counts.total} items (${feed.counts.curated} verified, ${feed.counts.crawled} auto-discovered). ${failed.size} source(s) failed.`);
+console.log(`\nWrote ${outPath}: ${feed.counts.total} items (${feed.counts.curated} verified, ${feed.counts.crawled} auto-discovered), ${removed.length} closed listing(s) removed. ${failed.size} source(s) failed.`);
 if (report.length && report.every(r => !r.ok)) process.exitCode = 1;

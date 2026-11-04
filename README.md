@@ -15,6 +15,8 @@ The crawler can't run inside Omni. Browsers block a page on lsu.edu from reading
 - **Auto-discovered**: found by the crawler and not reviewed by a person. These cards have a gold top border, plus a note telling students to confirm details on the employer site.
 - Auto-discovered listings drop off once a board stops listing them, after `graceDays` (3) so a brief outage doesn't remove them. If a board fails to load entirely, its earlier finds are kept.
 - Expired deadlines are hidden both at crawl time and in the browser.
+- **Every run re-opens each verified posting** and removes it when the employer's page clearly says it's closed: HTTP 404/410, a "no longer available / filled / expired" message, a redirect to an error page, or Workday's API reporting the job gone. Some pages can only be read in a real browser (ADP, Dayforce, UKG). Verified listings on those boards are hidden once their `verifiedAt` date is more than `curatedMaxAgeDays` (45) old, until someone re-checks them and updates the date in `crawler/curated/`.
+- Each run lists what it removed, and why, under `removed` in `feed.json`.
 
 ## One-time setup (about 15 minutes)
 
@@ -33,8 +35,8 @@ Edit `crawler/sources.json`. Copy an existing entry that uses the same platform:
 
 | adapter | Recognize it by job links like | Required fields |
 |---|---|---|
-| `workday` | `*.myworkdayjobs.com/...` | `host`, `tenant`, `site` |
-| `successfactors-rss` | `jobs.company.com/job/City-Title-ST-zip/123456/` | `base` |
+| `workday` | `*.myworkdayjobs.com/...` | `host`, `tenant`, `site` (searched with HR keywords unless `searches` is set) |
+| `successfactors` | `jobs.company.com/job/City-Title-ST-zip/123456/` | `base` (whole board is read unless `searches` is set) |
 | `smartrecruiters` | `jobs.smartrecruiters.com/Company/...` | `company` |
 | `neogov` | `governmentjobs.com/careers/<agency>` | `agency` |
 | `ultipro` | `recruiting*.ultipro.com/<TENANT>/JobBoard/<guid>` | `host`, `tenant`, `board` |
@@ -60,5 +62,6 @@ Each run prints one line per source (fetched / HR titles / in corridor). The sam
 ## Limits
 
 - Classification is keyword-based on job titles. It labels a role's type, level, and track automatically, but doesn't read eligibility requirements, which is why auto-discovered cards say they're unreviewed.
-- SuccessFactors RSS returns only the 20 newest matches per keyword, so the crawler queries several HR keywords per site.
+- Some SuccessFactors boards (CMA CGM / CEVA) load their search results by script, so they can't be read and are paused in `sources.json`.
+- To find a town the crawler skipped, add it to that metro's list in `crawler/curated/config.json`.
 - Each source uses its employer's own public job feed or API at a polite pace, with an identifying User-Agent. If an employer changes platforms, that source's line in the run report will show `FAIL`.

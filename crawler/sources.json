@@ -1,24 +1,38 @@
 {
-  "_comment": "One entry per employer job board. adapter = how the board is read. Add employers by copying an entry with the same adapter. Set enabled:false to pause one.",
+  "_comment": "One entry per employer job board. adapter = how the board is read. Add employers by copying an entry with the same adapter. Set enabled:false to pause one. Workday boards are searched with HR keywords unless 'searches' is given; SuccessFactors boards are read whole unless 'searches' is given.",
   "sources": [
     { "employer": "Hilcorp Energy Company", "adapter": "workday", "host": "hec.wd5.myworkdayjobs.com", "tenant": "hec", "site": "Hilcorp_Energy_Company", "searches": [""] },
+    { "employer": "LSU", "adapter": "workday", "host": "lsu.wd1.myworkdayjobs.com", "tenant": "lsu", "site": "LSU" },
+    { "employer": "Ochsner Health", "adapter": "workday", "host": "ochsner.wd1.myworkdayjobs.com", "tenant": "ochsner", "site": "Ochsner" },
+    { "employer": "Shell", "adapter": "workday", "host": "shell.wd3.myworkdayjobs.com", "tenant": "shell", "site": "ShellCareers" },
+    { "employer": "Chevron", "adapter": "workday", "host": "chevron.wd5.myworkdayjobs.com", "tenant": "chevron", "site": "jobs" },
+    { "employer": "Dow", "adapter": "workday", "host": "dow.wd1.myworkdayjobs.com", "tenant": "dow", "site": "ExternalCareers" },
+    { "employer": "Baker Hughes", "adapter": "workday", "host": "bakerhughes.wd5.myworkdayjobs.com", "tenant": "bakerhughes", "site": "BakerHughes" },
+    { "employer": "Westlake", "adapter": "workday", "host": "westlake.wd1.myworkdayjobs.com", "tenant": "westlake", "site": "Westlake" },
+    { "employer": "Marathon Petroleum", "adapter": "workday", "host": "mpc.wd1.myworkdayjobs.com", "tenant": "mpc", "site": "MPCCareers" },
+    { "employer": "Occidental", "adapter": "workday", "host": "oxy.wd5.myworkdayjobs.com", "tenant": "oxy", "site": "Corporate" },
+    { "employer": "Sysco", "adapter": "workday", "host": "sysco.wd5.myworkdayjobs.com", "tenant": "sysco", "site": "syscocareers" },
+    { "employer": "Hewlett Packard Enterprise", "adapter": "workday", "host": "hpe.wd5.myworkdayjobs.com", "tenant": "hpe", "site": "Jobsathpe" },
 
     { "employer": "Boyd Gaming", "adapter": "smartrecruiters", "company": "BoydGaming", "searches": ["human resources", "HR", "recruiter", "training"] },
 
-    { "employer": "Phillips 66", "adapter": "successfactors-rss", "base": "https://careers.phillips66.com" },
-    { "employer": "Cemex", "adapter": "successfactors-rss", "base": "https://jobs.cemex.com" },
-    { "employer": "Woodside Energy", "adapter": "successfactors-rss", "base": "https://careers.woodside.com.au" },
-    { "employer": "ExxonMobil", "adapter": "successfactors-rss", "base": "https://jobs.exxonmobil.com" },
-    { "employer": "Arkema", "adapter": "successfactors-rss", "base": "https://jobs.arkema.com" },
-    { "employer": "Sasol", "adapter": "successfactors-rss", "base": "https://jobs.sasol.com" },
-    { "employer": "Entergy", "adapter": "successfactors-rss", "base": "https://jobs.entergy.com" },
-    { "employer": "CMA CGM Group / CEVA Logistics", "adapter": "successfactors-rss", "base": "https://jobs.cmacgm-group.com" },
+    { "employer": "Phillips 66", "adapter": "successfactors", "base": "https://careers.phillips66.com" },
+    { "employer": "Cemex", "adapter": "successfactors", "base": "https://jobs.cemex.com", "searches": ["human resources", "HR", "talent", "recruiter", "training", "intern"] },
+    { "employer": "Woodside Energy", "adapter": "successfactors", "base": "https://careers.woodside.com.au" },
+    { "employer": "ExxonMobil", "adapter": "successfactors", "base": "https://jobs.exxonmobil.com" },
+    { "employer": "Arkema", "adapter": "successfactors", "base": "https://jobs.arkema.com", "searches": ["human resources", "HR", "HRBP", "talent", "recruiter", "training"] },
+    { "employer": "Sasol", "adapter": "successfactors", "base": "https://jobs.sasol.com", "searches": ["human resources", "HR", "talent", "learning", "training", "recruiter"] },
+    { "employer": "Entergy", "adapter": "successfactors", "base": "https://jobs.entergy.com" },
+    { "employer": "CMA CGM Group / CEVA Logistics", "adapter": "successfactors", "base": "https://jobs.cmacgm-group.com", "searches": ["human resources", "HR", "talent", "recruiter", "training", "payroll"], "enabled": false, "_note": "Search results load by script, so the HTML has no jobs to read." },
 
     { "employer": "State of Louisiana", "adapter": "neogov", "agency": "louisiana" },
     { "employer": "City of New Orleans", "adapter": "neogov", "agency": "neworleans" },
     { "employer": "City of Houston", "adapter": "neogov", "agency": "houston" },
+    { "employer": "Harris County", "adapter": "neogov", "agency": "harriscountytx", "state": "TX" },
+    { "employer": "Jefferson Parish", "adapter": "neogov", "agency": "jeffparish", "state": "LA" },
+    { "employer": "City of Kenner", "adapter": "neogov", "agency": "kennerla", "state": "LA" },
 
-    { "employer": "Woman's Hospital", "adapter": "ultipro", "host": "recruiting2.ultipro.com", "tenant": "WOM1000WHF", "board": "2f4bcf30-0e2d-4c6d-82e3-d7e885e672ea", "searches": ["human resources", "HR", "recruiter", "training", "benefits", "intern"] },
+    { "employer": "Woman's Hospital", "adapter": "ultipro", "host": "recruiting2.ultipro.com", "tenant": "WOM1000WHF", "board": "2f4bcf30-0e2d-4c6d-82e3-d7e885e672ea", "searches": ["human resources", "HR", "recruiter", "training", "benefits", "intern", "development"] },
 
     { "employer": "Arc of Greater New Orleans", "adapter": "rippling", "board": "arcgno-jobs" }
   ]
