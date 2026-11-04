@@ -220,7 +220,8 @@ export async function checkPosting(url, title) {
     const m = text.match(CLOSED_TEXT);
     if (m) return { state: 'closed', reason: `page says "${m[0]}"` };
     const words = keyWords(title), lower = text.toLowerCase();
-    const titleShown = words.length > 0 && words.every(w => lower.includes(w));
+    // a search-results page or a one-word title match can't confirm this particular job is open
+    const titleShown = words.length >= 2 && words.every(w => lower.includes(w)) && !/[?&](query|q|keyword|search)=/i.test(url);
     const redirected = new URL(res.url).pathname.replace(/\/$/, '') !== new URL(url).pathname.replace(/\/$/, '');
     if (redirected && !titleShown && text.length > 500) return { state: 'closed', reason: `redirected to a page without the job (${res.url})` };
     return titleShown ? { state: 'open', reason: 'title on page' } : { state: 'unknown', reason: 'page did not show the job' };
