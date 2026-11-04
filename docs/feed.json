@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T17:42:44.182Z",
+ "generatedAt": "2026-11-04T18:14:46.623Z",
  "schemaVersion": 1,
  "cities": [
   "Houston",
@@ -77,7 +77,7 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 1.5
+   "seconds": 1.8
   },
   {
    "employer": "Boyd Gaming",
@@ -87,7 +87,7 @@
    "hr": 28,
    "inCorridor": 1,
    "error": null,
-   "seconds": 1.1
+   "seconds": 1
   },
   {
    "employer": "Phillips 66",
@@ -97,17 +97,17 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 8.4
+   "seconds": 7.8
   },
   {
    "employer": "Cemex",
    "adapter": "successfactors-rss",
    "ok": true,
    "fetched": 151,
-   "hr": 28,
+   "hr": 27,
    "inCorridor": 2,
    "error": null,
-   "seconds": 10.6
+   "seconds": 10.8
   },
   {
    "employer": "Woodside Energy",
@@ -117,7 +117,7 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 8
+   "seconds": 8.8
   },
   {
    "employer": "ExxonMobil",
@@ -127,7 +127,7 @@
    "hr": 20,
    "inCorridor": 4,
    "error": null,
-   "seconds": 8.3
+   "seconds": 8.1
   },
   {
    "employer": "Arkema",
@@ -137,7 +137,7 @@
    "hr": 24,
    "inCorridor": 0,
    "error": null,
-   "seconds": 8.6
+   "seconds": 8.9
   },
   {
    "employer": "Sasol",
@@ -147,7 +147,7 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 10.2
+   "seconds": 10.1
   },
   {
    "employer": "Entergy",
@@ -157,7 +157,7 @@
    "hr": 7,
    "inCorridor": 1,
    "error": null,
-   "seconds": 8.7
+   "seconds": 8.9
   },
   {
    "employer": "CMA CGM Group / CEVA Logistics",
@@ -167,17 +167,17 @@
    "hr": 14,
    "inCorridor": 0,
    "error": null,
-   "seconds": 11.6
+   "seconds": 11.4
   },
   {
    "employer": "State of Louisiana",
    "adapter": "neogov",
    "ok": true,
-   "fetched": 556,
-   "hr": 10,
+   "fetched": 562,
+   "hr": 11,
    "inCorridor": 6,
    "error": null,
-   "seconds": 1.9
+   "seconds": 2.3
   },
   {
    "employer": "City of New Orleans",
@@ -187,7 +187,7 @@
    "hr": 1,
    "inCorridor": 1,
    "error": null,
-   "seconds": 4
+   "seconds": 1.9
   },
   {
    "employer": "City of Houston",
@@ -197,7 +197,7 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 0.8
+   "seconds": 0.4
   },
   {
    "employer": "Woman's Hospital",
@@ -207,7 +207,7 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 3.4
+   "seconds": 3.5
   },
   {
    "employer": "Arc of Greater New Orleans",
@@ -217,7 +217,7 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.4
   }
  ],
  "items": [
@@ -1866,8 +1866,8 @@
    ],
    "workMode": "Not specified",
    "salary": "$3,831–$7,518 per month",
-   "deadlineISO": "2026-11-10",
-   "deadline": "2026-11-10",
+   "deadlineISO": "2026-11-09",
+   "deadline": "2026-11-09",
    "postedAt": "2026-11-02",
    "summary": "The Louisiana Special School District (LSSD) is an education service agency that provides services to the Louisiana Special Schools (Louisiana School for the Deaf, Louisiana School for the Visually Impaired, and Special School Programs). The schools provide educational…",
    "url": "https://www.governmentjobs.com/careers/louisiana/jobs/5536904-0",
@@ -1894,8 +1894,8 @@
    ],
    "workMode": "Not specified",
    "salary": "$3,127–$6,136 per month",
-   "deadlineISO": "2026-11-09",
-   "deadline": "2026-11-09",
+   "deadlineISO": "2026-11-08",
+   "deadline": "2026-11-08",
    "postedAt": "2026-10-30",
    "summary": "The Division of Administration/Office of Human Resources has a vacancy. This position will be filled in the Compensation and Staffing unit. The position performs a consultant role through phone calls and meetings with managers/directors to discuss and recommend job titles to fit…",
    "url": "https://www.governmentjobs.com/careers/louisiana/jobs/5535674-0",
@@ -1922,8 +1922,8 @@
    ],
    "workMode": "Not specified",
    "salary": "$2,922–$5,734 per month",
-   "deadlineISO": "2026-11-16",
-   "deadline": "2026-11-16",
+   "deadlineISO": "2026-11-15",
+   "deadline": "2026-11-15",
    "postedAt": "2026-10-30",
    "summary": "Office of Workforce Development Division: Veterans Unit Location: Gonzales, LA Louisiana Works transforms lives and drives prosperity by putting people at the center of everything we do. We provide one seamless door where individualized solutions create new possibilities,…",
    "url": "https://www.governmentjobs.com/careers/louisiana/jobs/5535521-0",
@@ -1950,8 +1950,8 @@
    ],
    "workMode": "Not specified",
    "salary": "$4,099–$8,044 per month",
-   "deadlineISO": "2026-11-13",
-   "deadline": "2026-11-13",
+   "deadlineISO": "2026-11-12",
+   "deadline": "2026-11-12",
    "postedAt": "2026-10-29",
    "summary": "Division : Within the Human Resources Department at ELMHS Located in Jackson, LA The Mission of ELMHS is to provide mental health evaluation, treatment, habilitation and consultation for adults. Programs include inpatient interventions, jail based evaluations, supervised group…",
    "url": "https://www.governmentjobs.com/careers/louisiana/jobs/5534060-0",
@@ -1978,8 +1978,8 @@
    ],
    "workMode": "Not specified",
    "salary": "$NaN–$NaN per year",
-   "deadlineISO": "2026-12-23",
-   "deadline": "2026-12-23",
+   "deadlineISO": "2026-12-22",
+   "deadline": "2026-12-22",
    "postedAt": "2026-10-22",
    "summary": "",
    "url": "https://www.governmentjobs.com/careers/louisiana/jobs/5525237-0",
