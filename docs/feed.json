@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-04T19:36:36.286Z",
+ "generatedAt": "2026-11-04T19:47:29.467Z",
  "schemaVersion": 1,
  "cities": [
   "Houston",
@@ -62,12 +62,12 @@
   "od": "Organizational Development and Change"
  },
  "counts": {
-  "total": 55,
-  "curated": 11,
+  "total": 57,
+  "curated": 13,
   "crawled": 44,
-  "removed": 26,
-  "undergraduate": 11,
-  "graduate": 44
+  "removed": 24,
+  "undergraduate": 12,
+  "graduate": 45
  },
  "sources": [
   {
@@ -78,7 +78,7 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 1.6
+   "seconds": 1.4
   },
   {
    "employer": "LSU",
@@ -88,7 +88,7 @@
    "hr": 3,
    "inCorridor": 0,
    "error": null,
-   "seconds": 20.7
+   "seconds": 16.8
   },
   {
    "employer": "Ochsner Health",
@@ -98,7 +98,7 @@
    "hr": 1,
    "inCorridor": 1,
    "error": null,
-   "seconds": 26.7
+   "seconds": 27.5
   },
   {
    "employer": "Shell",
@@ -108,7 +108,7 @@
    "hr": 1,
    "inCorridor": 0,
    "error": null,
-   "seconds": 19.8
+   "seconds": 19.7
   },
   {
    "employer": "Chevron",
@@ -118,7 +118,7 @@
    "hr": 8,
    "inCorridor": 1,
    "error": null,
-   "seconds": 16.2
+   "seconds": 17.8
   },
   {
    "employer": "Dow",
@@ -128,7 +128,7 @@
    "hr": 13,
    "inCorridor": 1,
    "error": null,
-   "seconds": 20.5
+   "seconds": 19.5
   },
   {
    "employer": "Baker Hughes",
@@ -138,7 +138,7 @@
    "hr": 8,
    "inCorridor": 2,
    "error": null,
-   "seconds": 19.1
+   "seconds": 22.2
   },
   {
    "employer": "Westlake",
@@ -148,7 +148,7 @@
    "hr": 13,
    "inCorridor": 3,
    "error": null,
-   "seconds": 18.6
+   "seconds": 19.2
   },
   {
    "employer": "Marathon Petroleum",
@@ -158,7 +158,7 @@
    "hr": 12,
    "inCorridor": 3,
    "error": null,
-   "seconds": 18
+   "seconds": 18.2
   },
   {
    "employer": "Occidental",
@@ -168,17 +168,17 @@
    "hr": 2,
    "inCorridor": 2,
    "error": null,
-   "seconds": 13.4
+   "seconds": 12.8
   },
   {
    "employer": "Sysco",
    "adapter": "workday",
    "ok": true,
-   "fetched": 182,
+   "fetched": 179,
    "hr": 22,
    "inCorridor": 0,
    "error": null,
-   "seconds": 20
+   "seconds": 21.2
   },
   {
    "employer": "Hewlett Packard Enterprise",
@@ -188,17 +188,17 @@
    "hr": 27,
    "inCorridor": 11,
    "error": null,
-   "seconds": 31.4
+   "seconds": 31.8
   },
   {
    "employer": "Boyd Gaming",
    "adapter": "smartrecruiters",
    "ok": true,
-   "fetched": 214,
+   "fetched": 215,
    "hr": 29,
    "inCorridor": 1,
    "error": null,
-   "seconds": 1.4
+   "seconds": 1
   },
   {
    "employer": "Phillips 66",
@@ -208,7 +208,7 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 4.8
+   "seconds": 4.5
   },
   {
    "employer": "Cemex",
@@ -218,7 +218,7 @@
    "hr": 32,
    "inCorridor": 5,
    "error": null,
-   "seconds": 44.4
+   "seconds": 38.1
   },
   {
    "employer": "Woodside Energy",
@@ -228,7 +228,7 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 1.8
+   "seconds": 2.2
   },
   {
    "employer": "ExxonMobil",
@@ -238,17 +238,17 @@
    "hr": 14,
    "inCorridor": 4,
    "error": null,
-   "seconds": 26
+   "seconds": 16.7
   },
   {
    "employer": "Arkema",
    "adapter": "successfactors",
    "ok": true,
-   "fetched": 89,
+   "fetched": 91,
    "hr": 7,
    "inCorridor": 0,
    "error": null,
-   "seconds": 15.4
+   "seconds": 14.8
   },
   {
    "employer": "Sasol",
@@ -258,7 +258,7 @@
    "hr": 2,
    "inCorridor": 0,
    "error": null,
-   "seconds": 15.4
+   "seconds": 12.8
   },
   {
    "employer": "Entergy",
@@ -268,17 +268,17 @@
    "hr": 4,
    "inCorridor": 2,
    "error": null,
-   "seconds": 14
+   "seconds": 11.9
   },
   {
    "employer": "State of Louisiana",
    "adapter": "neogov",
    "ok": true,
-   "fetched": 583,
+   "fetched": 589,
    "hr": 11,
    "inCorridor": 6,
    "error": null,
-   "seconds": 1.4
+   "seconds": 2.9
   },
   {
    "employer": "City of New Orleans",
@@ -288,7 +288,7 @@
    "hr": 1,
    "inCorridor": 1,
    "error": null,
-   "seconds": 0.5
+   "seconds": 1
   },
   {
    "employer": "City of Houston",
@@ -304,11 +304,11 @@
    "employer": "Harris County",
    "adapter": "neogov",
    "ok": true,
-   "fetched": 205,
+   "fetched": 206,
    "hr": 4,
    "inCorridor": 4,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.8
   },
   {
    "employer": "Jefferson Parish",
@@ -338,7 +338,7 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 3.9
+   "seconds": 5.4
   },
   {
    "employer": "Arc of Greater New Orleans",
@@ -348,18 +348,10 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.3
   }
  ],
  "removed": [
-  {
-   "id": "hilcorp-6395",
-   "origin": "curated",
-   "employer": "Hilcorp Energy Company",
-   "title": "I-26133 – HR Benefits Part-Time Intern",
-   "url": "https://hec.wd5.myworkdayjobs.com/en-US/Hilcorp_Energy_Company/job/I-26133---HR-Benefits-Part-Time-Intern_R006395-1",
-   "reason": "Workday HTTP 403"
-  },
   {
    "id": "boyd-32276",
    "origin": "curated",
@@ -369,12 +361,12 @@
    "reason": "page says \"This job has expired\""
   },
   {
-   "id": "aramark-674203",
+   "id": "hilcorp-6395",
    "origin": "curated",
-   "employer": "Aramark",
-   "title": "Human Resources Intern – LSU Athletic Venues and Events",
-   "url": "https://careers.aramark.com/job/human-resources-intern-lsu-lsu-athletic-venues-and-events/baton-rouge-la/674203/",
-   "reason": "HTTP 410"
+   "employer": "Hilcorp Energy Company",
+   "title": "I-26133 – HR Benefits Part-Time Intern",
+   "url": "https://hec.wd5.myworkdayjobs.com/en-US/Hilcorp_Energy_Company/job/I-26133---HR-Benefits-Part-Time-Intern_R006395-1",
+   "reason": "Workday HTTP 403"
   },
   {
    "id": "cajun-14622",
@@ -383,22 +375,6 @@
    "title": "HR Operations Coordinator",
    "url": "https://talent-cajunusa.icims.com/jobs/14622/hr-operations-coordinator/job",
    "reason": "HTTP 410"
-  },
-  {
-   "id": "cbt-hr-assistant",
-   "origin": "curated",
-   "employer": "Children’s Behavioral Therapy",
-   "title": "HR Assistant",
-   "url": "https://childrensbehavioraltherapy.com/careers/",
-   "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
-  },
-  {
-   "id": "phillips-2027",
-   "origin": "curated",
-   "employer": "Phillips 66",
-   "title": "2027 University Undergraduate Intern – Human Resources",
-   "url": "https://careers.phillips66.com/job/Houston-2027-University-Undergraduate-Intern-Human-Resources-TX-77042/1420108400/",
-   "reason": "page says \"this position has been filled\""
   },
   {
    "id": "citadel-1563",
@@ -417,6 +393,14 @@
    "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
   },
   {
+   "id": "aramark-674203",
+   "origin": "curated",
+   "employer": "Aramark",
+   "title": "Human Resources Intern – LSU Athletic Venues and Events",
+   "url": "https://careers.aramark.com/job/human-resources-intern-lsu-lsu-athletic-venues-and-events/baton-rouge-la/674203/",
+   "reason": "HTTP 410"
+  },
+  {
    "id": "arcgno-recruitment",
    "origin": "curated",
    "employer": "Arc of Greater New Orleans",
@@ -433,19 +417,19 @@
    "reason": "redirected to https://easyapply.co/apply/invalidjob"
   },
   {
+   "id": "slb-19650",
+   "origin": "curated",
+   "employer": "SLB",
+   "title": "HR Intern",
+   "url": "https://apply.slb.com/careers?query=HR+Intern&start=0&pid=563499734207380&sort_by=relevance",
+   "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
+  },
+  {
    "id": "olin-15705",
    "origin": "curated",
    "employer": "Olin Corporation",
    "title": "Human Resources Intern – 2027",
    "url": "https://phe.tbe.taleo.net/phe02/ats/careers/v2/viewRequisition?org=OLIN&cws=47&rid=15705",
-   "reason": "page says \"This job has moved or is no longer available\""
-  },
-  {
-   "id": "olin-15734",
-   "origin": "curated",
-   "employer": "Olin Corporation",
-   "title": "Human Resources Intern – 2027",
-   "url": "https://phe.tbe.taleo.net/phe02/ats/careers/v2/viewRequisition?org=OLIN&cws=47&rid=15734",
    "reason": "page says \"This job has moved or is no longer available\""
   },
   {
@@ -457,12 +441,20 @@
    "reason": "page says \"This job has moved or is no longer available\""
   },
   {
-   "id": "slb-19650",
+   "id": "woodside-21642",
    "origin": "curated",
-   "employer": "SLB",
-   "title": "HR Intern",
-   "url": "https://apply.slb.com/careers?query=HR+Intern&start=0&pid=563499734207380&sort_by=relevance",
-   "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
+   "employer": "Woodside Energy",
+   "title": "Early Career Pathways – Human Resources Internship",
+   "url": "https://careers.woodside.com.au/job/Early-Career-Pathways-Human-Resources-Internship-TX-77056/1366719766/",
+   "reason": "page says \"this position has been filled\""
+  },
+  {
+   "id": "olin-15734",
+   "origin": "curated",
+   "employer": "Olin Corporation",
+   "title": "Human Resources Intern – 2027",
+   "url": "https://phe.tbe.taleo.net/phe02/ats/careers/v2/viewRequisition?org=OLIN&cws=47&rid=15734",
+   "reason": "page says \"This job has moved or is no longer available\""
   },
   {
    "id": "ceva-learning",
@@ -481,20 +473,12 @@
    "reason": "redirected to a page without the job (https://jobs.cmacgm-group.com/CEVALogistics/job/Houston-Tx-Senior-Human-Resources-Business-Partner-Houston,-TX-TX-77001/584951-en_GB/)"
   },
   {
-   "id": "ceva-talent",
+   "id": "phillips-2027",
    "origin": "curated",
-   "employer": "CEVA Logistics",
-   "title": "Talent Management Director",
-   "url": "https://jobs.cmacgm-group.com/CEVALogistics/job/Houston-Tx-Talent-Management-Director-TX-77001/1365180333/",
-   "reason": "redirected to a page without the job (https://jobs.cmacgm-group.com/CEVALogistics/job/Houston-Tx-Talent-Management-Director-TX-77001/574931-en_GB/)"
-  },
-  {
-   "id": "coffee-11243",
-   "origin": "curated",
-   "employer": "Community Coffee",
-   "title": "Sr. Change Management Specialist",
-   "url": "https://jobs.dayforcehcm.com/en-US/communitycoffee/CANDIDATEPORTAL/jobs/11243",
-   "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
+   "employer": "Phillips 66",
+   "title": "2027 University Undergraduate Intern – Human Resources",
+   "url": "https://careers.phillips66.com/job/Houston-2027-University-Undergraduate-Intern-Human-Resources-TX-77042/1420108400/",
+   "reason": "page says \"this position has been filled\""
   },
   {
    "id": "arkema-1401455133",
@@ -505,6 +489,14 @@
    "reason": "page says \"this position has been filled\""
   },
   {
+   "id": "ceva-talent",
+   "origin": "curated",
+   "employer": "CEVA Logistics",
+   "title": "Talent Management Director",
+   "url": "https://jobs.cmacgm-group.com/CEVALogistics/job/Houston-Tx-Talent-Management-Director-TX-77001/1365180333/",
+   "reason": "redirected to a page without the job (https://jobs.cmacgm-group.com/CEVALogistics/job/Houston-Tx-Talent-Management-Director-TX-77001/574931-en_GB/)"
+  },
+  {
    "id": "ochsner-274483",
    "origin": "curated",
    "employer": "Ochsner Health",
@@ -513,20 +505,12 @@
    "reason": "HTTP 404"
   },
   {
-   "id": "methodist-jr14940",
+   "id": "coffee-11243",
    "origin": "curated",
-   "employer": "Houston Methodist",
-   "title": "Sr HR Generalist",
-   "url": "https://www.houstonmethodistcareers.org/job/119347/sr-hr-generalist-human-resources-houston-methodist-willowbrook-hospital/",
+   "employer": "Community Coffee",
+   "title": "Sr. Change Management Specialist",
+   "url": "https://jobs.dayforcehcm.com/en-US/communitycoffee/CANDIDATEPORTAL/jobs/11243",
    "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
-  },
-  {
-   "id": "sasol-1389318133",
-   "origin": "curated",
-   "employer": "Sasol",
-   "title": "L&D Specialist - Technical",
-   "url": "https://jobs.sasol.com/job/Lake-Charles-L&D-Specialist-Technical/1389318133/",
-   "reason": "page says \"this position has been filled\""
   },
   {
    "id": "entergy-1425485100",
@@ -537,12 +521,12 @@
    "reason": "page says \"posting has expired\""
   },
   {
-   "id": "laitram-8409",
+   "id": "sasol-1389318133",
    "origin": "curated",
-   "employer": "Laitram",
-   "title": "Employee Development Specialist - People & Culture",
-   "url": "https://jobs.laitram.com/en_US/JobsLaitram/JobDetail/Employee-Development-Specialist-People-Culture/8409",
-   "reason": "HTTP 404"
+   "employer": "Sasol",
+   "title": "L&D Specialist - Technical",
+   "url": "https://jobs.sasol.com/job/Lake-Charles-L&D-Specialist-Technical/1389318133/",
+   "reason": "page says \"this position has been filled\""
   },
   {
    "id": "womans-manag008209",
@@ -553,12 +537,12 @@
    "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
   },
   {
-   "id": "woodside-21642",
+   "id": "laitram-8409",
    "origin": "curated",
-   "employer": "Woodside Energy",
-   "title": "Early Career Pathways – Human Resources Internship",
-   "url": "https://careers.woodside.com.au/job/Early-Career-Pathways-Human-Resources-Internship-TX-77056/1366719766/",
-   "reason": "could not confirm it is open, and last verified 2026-09-13 (The operation was aborted due to timeout)"
+   "employer": "Laitram",
+   "title": "Employee Development Specialist - People & Culture",
+   "url": "https://jobs.laitram.com/en_US/JobsLaitram/JobDetail/Employee-Development-Specialist-People-Culture/8409",
+   "reason": "HTTP 404"
   }
  ],
  "items": [
@@ -606,6 +590,58 @@
    "family": null,
    "workMode": "Not specified",
    "summary": "Explore learning and development, performance management, engagement, and talent acquisition through projects and presentations to business leaders.",
+   "lastSeenAt": "2026-11-04"
+  },
+  {
+   "id": "cbt-hr-assistant",
+   "title": "HR Assistant",
+   "employer": "Children’s Behavioral Therapy",
+   "location": "Beaumont, TX",
+   "area": "Beaumont area",
+   "type": "Entry level",
+   "focus": "HRM",
+   "schedule": "Full-time",
+   "fit": "Build recruiting, onboarding, employee-record, and communication skills in a small healthcare organization.",
+   "eligibility": "HR experience or knowledge is desired; communication, organization, and Microsoft Office skills. No minimum years stated in the detailed job-board listing.",
+   "url": "https://childrensbehavioraltherapy.com/careers/",
+   "source": "Employer careers page · HR Assistant",
+   "note": "Use the employer’s CV form and specify HR Assistant. Ask the employer to confirm the full qualifications.",
+   "evidenceUrl": "https://www.glassdoor.com/job-listing/human-resources-assistant-childrens-behavioral-therapy-pllc-JV_IC1139817_KO0,25_KE26,59.htm?jl=1010179657468",
+   "verifiedAt": "2026-09-13",
+   "verification": "Live HR Assistant row in Beaumont and CV submission form checked in browser.",
+   "applyLabel": "View opening & employer CV form",
+   "industries": [
+    "Healthcare"
+   ],
+   "tags": [
+    "health care",
+    "behavioral health",
+    "therapy",
+    "clinic",
+    "medical",
+    "ABA"
+   ],
+   "tracks": [
+    "undergraduate"
+   ],
+   "status": "open",
+   "linkAuditAt": "2026-09-13",
+   "skills": [
+    "recruitment",
+    "onboarding",
+    "wellness"
+   ],
+   "locality": "Beaumont",
+   "applicationAudience": "candidate",
+   "applicationCheckedAt": "2026-09-13",
+   "applicationReviewedUrl": "https://childrensbehavioraltherapy.com/careers/",
+   "origin": "curated",
+   "level": "Entry level",
+   "family": null,
+   "workMode": "Not specified",
+   "summary": "Build recruiting, onboarding, employee-record, and communication skills in a small healthcare organization.",
+   "checkedAt": "2026-11-04",
+   "checkState": "open",
    "lastSeenAt": "2026-11-04"
   },
   {
@@ -1007,6 +1043,48 @@
    "applicationAudience": "candidate",
    "applicationCheckedAt": "2026-09-13",
    "applicationReviewedUrl": "https://www.houstonmethodistcareers.org/job/119352/senior-hr-generalist-human-resources-houston-methodist-clear-lake-hospital/",
+   "origin": "curated",
+   "type": "Experienced",
+   "summary": "Combines conflict resolution, manager consultation, workforce analysis, and performance-appraisal training. A professional HR partner pathway for graduates with prior HR experience.",
+   "eligibility": "Bachelor’s and four years of HR experience, including at least three years at a higher level in employee/labor relations, organizational consulting, recruitment, compensation, or benefits. HR certification preferred.",
+   "checkedAt": "2026-11-04",
+   "checkState": "open",
+   "lastSeenAt": "2026-11-04"
+  },
+  {
+   "id": "methodist-jr14940",
+   "title": "Sr HR Generalist",
+   "employer": "Houston Methodist",
+   "area": "Houston area",
+   "locality": "Houston",
+   "location": "Houston, TX",
+   "family": "relations",
+   "focus": "Blended",
+   "level": "Senior generalist",
+   "workMode": "Not specified",
+   "requirements": "Bachelor’s and four years of HR experience, including at least three years at a higher level in employee/labor relations, organizational consulting, recruitment, compensation, or benefits. HR certification preferred.",
+   "fit": "Combines conflict resolution, manager consultation, workforce analysis, and performance-appraisal training. A professional HR partner pathway for graduates with prior HR experience.",
+   "url": "https://www.houstonmethodistcareers.org/job/119347/sr-hr-generalist-human-resources-houston-methodist-willowbrook-hospital/",
+   "tags": [
+    "healthcare",
+    "hospital",
+    "employee relations",
+    "labor relations",
+    "talent acquisition",
+    "performance management"
+   ],
+   "locationNote": "Willowbrook Hospital, 13300 Hargrave, Houston. Requisition JR-14940.",
+   "salary": "Not posted",
+   "deadline": "Not posted",
+   "deadlineISO": null,
+   "verifiedAt": "2026-09-13",
+   "tracks": [
+    "graduate"
+   ],
+   "status": "open",
+   "applicationAudience": "candidate",
+   "applicationCheckedAt": "2026-09-13",
+   "applicationReviewedUrl": "https://www.houstonmethodistcareers.org/job/119347/sr-hr-generalist-human-resources-houston-methodist-willowbrook-hospital/",
    "origin": "curated",
    "type": "Experienced",
    "summary": "Combines conflict resolution, manager consultation, workforce analysis, and performance-appraisal training. A professional HR partner pathway for graduates with prior HR experience.",
