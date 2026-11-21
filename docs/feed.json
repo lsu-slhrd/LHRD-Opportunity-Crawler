@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-20T11:58:14.172Z",
+ "generatedAt": "2026-11-21T11:47:23.063Z",
  "schemaVersion": 1,
  "cities": [
   "Houston",
@@ -62,23 +62,23 @@
   "od": "Organizational Development and Change"
  },
  "counts": {
-  "total": 68,
+  "total": 69,
   "curated": 12,
-  "crawled": 56,
+  "crawled": 57,
   "removed": 26,
   "undergraduate": 12,
-  "graduate": 56
+  "graduate": 57
  },
  "sources": [
   {
    "employer": "Hilcorp Energy Company",
    "adapter": "workday",
    "ok": true,
-   "fetched": 30,
+   "fetched": 29,
    "hr": 1,
    "inCorridor": 1,
    "error": null,
-   "seconds": 1.5
+   "seconds": 1.6
   },
   {
    "employer": "LSU",
@@ -88,143 +88,143 @@
    "hr": 8,
    "inCorridor": 0,
    "error": null,
-   "seconds": 14.5
+   "seconds": 15.4
   },
   {
    "employer": "Ochsner Health",
    "adapter": "workday",
    "ok": true,
    "fetched": 212,
-   "hr": 2,
-   "inCorridor": 2,
+   "hr": 3,
+   "inCorridor": 3,
    "error": null,
-   "seconds": 19.6
+   "seconds": 20.2
   },
   {
    "employer": "Shell",
+   "adapter": "workday",
+   "ok": true,
+   "fetched": 113,
+   "hr": 5,
+   "inCorridor": 1,
+   "error": null,
+   "seconds": 19
+  },
+  {
+   "employer": "Chevron",
    "adapter": "workday",
    "ok": true,
    "fetched": 112,
    "hr": 4,
    "inCorridor": 0,
    "error": null,
-   "seconds": 20
-  },
-  {
-   "employer": "Chevron",
-   "adapter": "workday",
-   "ok": true,
-   "fetched": 126,
-   "hr": 6,
-   "inCorridor": 1,
-   "error": null,
-   "seconds": 18.5
+   "seconds": 14.7
   },
   {
    "employer": "Dow",
    "adapter": "workday",
    "ok": true,
-   "fetched": 181,
+   "fetched": 182,
    "hr": 22,
    "inCorridor": 2,
    "error": null,
-   "seconds": 23.2
+   "seconds": 19.2
   },
   {
    "employer": "Baker Hughes",
    "adapter": "workday",
    "ok": true,
-   "fetched": 188,
+   "fetched": 193,
    "hr": 2,
    "inCorridor": 1,
    "error": null,
-   "seconds": 18.8
+   "seconds": 17.3
   },
   {
    "employer": "Westlake",
    "adapter": "workday",
    "ok": true,
-   "fetched": 179,
+   "fetched": 182,
    "hr": 12,
    "inCorridor": 3,
    "error": null,
-   "seconds": 14.6
+   "seconds": 14.1
   },
   {
    "employer": "Marathon Petroleum",
    "adapter": "workday",
    "ok": true,
-   "fetched": 106,
+   "fetched": 111,
    "hr": 7,
    "inCorridor": 2,
    "error": null,
-   "seconds": 17.1
+   "seconds": 16.3
   },
   {
    "employer": "Occidental",
    "adapter": "workday",
    "ok": true,
-   "fetched": 54,
+   "fetched": 56,
    "hr": 2,
    "inCorridor": 2,
    "error": null,
-   "seconds": 13.3
+   "seconds": 12.3
   },
   {
    "employer": "Sysco",
    "adapter": "workday",
    "ok": true,
-   "fetched": 198,
-   "hr": 34,
+   "fetched": 201,
+   "hr": 33,
    "inCorridor": 0,
    "error": null,
-   "seconds": 20.5
+   "seconds": 17.9
   },
   {
    "employer": "Hewlett Packard Enterprise",
    "adapter": "workday",
    "ok": true,
    "fetched": 251,
-   "hr": 36,
+   "hr": 35,
    "inCorridor": 9,
    "error": null,
-   "seconds": 29.2
+   "seconds": 28.2
   },
   {
    "employer": "Boyd Gaming",
    "adapter": "smartrecruiters",
    "ok": true,
-   "fetched": 213,
+   "fetched": 211,
    "hr": 29,
    "inCorridor": 2,
    "error": null,
-   "seconds": 1.2
+   "seconds": 1.1
   },
   {
    "employer": "Phillips 66",
    "adapter": "successfactors",
    "ok": true,
-   "fetched": 64,
+   "fetched": 67,
    "hr": 1,
    "inCorridor": 1,
    "error": null,
-   "seconds": 4.5
+   "seconds": 4.8
   },
   {
    "employer": "Cemex",
    "adapter": "successfactors",
    "ok": true,
-   "fetched": 3,
-   "hr": 0,
-   "inCorridor": 0,
+   "fetched": 332,
+   "hr": 30,
+   "inCorridor": 3,
    "error": null,
-   "seconds": 6.9
+   "seconds": 47.4
   },
   {
    "employer": "Woodside Energy",
    "adapter": "successfactors",
    "ok": true,
-   "fetched": 15,
+   "fetched": 14,
    "hr": 0,
    "inCorridor": 0,
    "error": null,
@@ -235,56 +235,56 @@
    "adapter": "successfactors",
    "ok": true,
    "fetched": 500,
-   "hr": 21,
+   "hr": 20,
    "inCorridor": 7,
    "error": null,
-   "seconds": 16.1
+   "seconds": 17.8
   },
   {
    "employer": "Arkema",
    "adapter": "successfactors",
    "ok": true,
-   "fetched": 35,
-   "hr": 2,
+   "fetched": 81,
+   "hr": 8,
    "inCorridor": 0,
    "error": null,
-   "seconds": 8.5
+   "seconds": 13.5
   },
   {
    "employer": "Sasol",
    "adapter": "successfactors",
    "ok": true,
-   "fetched": 11,
+   "fetched": 49,
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 6.7
+   "seconds": 11.5
   },
   {
    "employer": "Entergy",
    "adapter": "successfactors",
    "ok": true,
-   "fetched": 351,
+   "fetched": 352,
    "hr": 6,
    "inCorridor": 5,
    "error": null,
-   "seconds": 11.6
+   "seconds": 13.4
   },
   {
    "employer": "State of Louisiana",
    "adapter": "neogov",
    "ok": true,
-   "fetched": 669,
-   "hr": 15,
+   "fetched": 688,
+   "hr": 14,
    "inCorridor": 10,
    "error": null,
-   "seconds": 1.6
+   "seconds": 2.7
   },
   {
    "employer": "City of New Orleans",
    "adapter": "neogov",
    "ok": true,
-   "fetched": 143,
+   "fetched": 125,
    "hr": 1,
    "inCorridor": 1,
    "error": null,
@@ -294,7 +294,7 @@
    "employer": "City of Houston",
    "adapter": "neogov",
    "ok": true,
-   "fetched": 123,
+   "fetched": 125,
    "hr": 0,
    "inCorridor": 0,
    "error": null,
@@ -304,21 +304,21 @@
    "employer": "Harris County",
    "adapter": "neogov",
    "ok": true,
-   "fetched": 190,
+   "fetched": 192,
    "hr": 5,
    "inCorridor": 5,
    "error": null,
-   "seconds": 0.6
+   "seconds": 0.5
   },
   {
    "employer": "Jefferson Parish",
    "adapter": "neogov",
    "ok": true,
-   "fetched": 60,
+   "fetched": 56,
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 0.2
+   "seconds": 0.1
   },
   {
    "employer": "City of Kenner",
@@ -334,11 +334,11 @@
    "employer": "Woman's Hospital",
    "adapter": "ultipro",
    "ok": true,
-   "fetched": 65,
+   "fetched": 67,
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 4.1
+   "seconds": 3.8
   },
   {
    "employer": "Arc of Greater New Orleans",
@@ -348,7 +348,7 @@
    "hr": 0,
    "inCorridor": 0,
    "error": null,
-   "seconds": 0.3
+   "seconds": 0.2
   }
  ],
  "removed": [
@@ -361,12 +361,12 @@
    "reason": "page says \"This job has expired\""
   },
   {
-   "id": "phillips-2027",
+   "id": "hilcorp-6395",
    "origin": "curated",
-   "employer": "Phillips 66",
-   "title": "2027 University Undergraduate Intern – Human Resources",
-   "url": "https://careers.phillips66.com/job/Houston-2027-University-Undergraduate-Intern-Human-Resources-TX-77042/1420108400/",
-   "reason": "page says \"this position has been filled\""
+   "employer": "Hilcorp Energy Company",
+   "title": "I-26133 – HR Benefits Part-Time Intern",
+   "url": "https://hec.wd5.myworkdayjobs.com/en-US/Hilcorp_Energy_Company/job/I-26133---HR-Benefits-Part-Time-Intern_R006395-1",
+   "reason": "Workday HTTP 403"
   },
   {
    "id": "cajun-14622",
@@ -377,6 +377,14 @@
    "reason": "HTTP 410"
   },
   {
+   "id": "phillips-2027",
+   "origin": "curated",
+   "employer": "Phillips 66",
+   "title": "2027 University Undergraduate Intern – Human Resources",
+   "url": "https://careers.phillips66.com/job/Houston-2027-University-Undergraduate-Intern-Human-Resources-TX-77042/1420108400/",
+   "reason": "page says \"this position has been filled\""
+  },
+  {
    "id": "aramark-674203",
    "origin": "curated",
    "employer": "Aramark",
@@ -385,27 +393,11 @@
    "reason": "HTTP 410"
   },
   {
-   "id": "hilcorp-6395",
-   "origin": "curated",
-   "employer": "Hilcorp Energy Company",
-   "title": "I-26133 – HR Benefits Part-Time Intern",
-   "url": "https://hec.wd5.myworkdayjobs.com/en-US/Hilcorp_Energy_Company/job/I-26133---HR-Benefits-Part-Time-Intern_R006395-1",
-   "reason": "Workday HTTP 403"
-  },
-  {
    "id": "citadel-1563",
    "origin": "curated",
    "employer": "Citadel Aviation / Citadel Completions",
    "title": "HR Coordinator",
    "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=2da3850d-62c9-4de2-af31-2c8943b68b0d&jobId=520716",
-   "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
-  },
-  {
-   "id": "doug-hr-assistant",
-   "origin": "curated",
-   "employer": "Doug Ashy Building Materials",
-   "title": "Human Resources Assistant",
-   "url": "https://dougashy.com/careers/?jobId=6ebf71b1-77bc-5934-617c-e5a672b1f95e",
    "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
   },
   {
@@ -417,28 +409,20 @@
    "reason": "redirected to https://ats.rippling.com/arcgno-jobs/jobs?rr_message=job_not_found"
   },
   {
+   "id": "doug-hr-assistant",
+   "origin": "curated",
+   "employer": "Doug Ashy Building Materials",
+   "title": "Human Resources Assistant",
+   "url": "https://dougashy.com/careers/?jobId=6ebf71b1-77bc-5934-617c-e5a672b1f95e",
+   "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
+  },
+  {
    "id": "goodwill-outreach",
    "origin": "curated",
    "employer": "Goodwill Industries of Southeastern Louisiana",
    "title": "Career and Outreach Specialist – Workforce Services",
    "url": "https://easyapply.co/a/92b727be-2cb7-4afd-8527-7085b844c736",
    "reason": "redirected to https://easyapply.co/apply/invalidjob"
-  },
-  {
-   "id": "olin-15705",
-   "origin": "curated",
-   "employer": "Olin Corporation",
-   "title": "Human Resources Intern – 2027",
-   "url": "https://phe.tbe.taleo.net/phe02/ats/careers/v2/viewRequisition?org=OLIN&cws=47&rid=15705",
-   "reason": "page says \"This job has moved or is no longer available\""
-  },
-  {
-   "id": "olin-15734",
-   "origin": "curated",
-   "employer": "Olin Corporation",
-   "title": "Human Resources Intern – 2027",
-   "url": "https://phe.tbe.taleo.net/phe02/ats/careers/v2/viewRequisition?org=OLIN&cws=47&rid=15734",
-   "reason": "page says \"This job has moved or is no longer available\""
   },
   {
    "id": "woodside-21642",
@@ -449,11 +433,27 @@
    "reason": "page says \"this position has been filled\""
   },
   {
+   "id": "olin-15705",
+   "origin": "curated",
+   "employer": "Olin Corporation",
+   "title": "Human Resources Intern – 2027",
+   "url": "https://phe.tbe.taleo.net/phe02/ats/careers/v2/viewRequisition?org=OLIN&cws=47&rid=15705",
+   "reason": "page says \"This job has moved or is no longer available\""
+  },
+  {
    "id": "olin-15674",
    "origin": "curated",
    "employer": "Olin Corporation",
    "title": "Learning and Development Intern",
    "url": "https://phe.tbe.taleo.net/phe02/ats/careers/v2/viewRequisition?org=OLIN&cws=47&rid=15674",
+   "reason": "page says \"This job has moved or is no longer available\""
+  },
+  {
+   "id": "olin-15734",
+   "origin": "curated",
+   "employer": "Olin Corporation",
+   "title": "Human Resources Intern – 2027",
+   "url": "https://phe.tbe.taleo.net/phe02/ats/careers/v2/viewRequisition?org=OLIN&cws=47&rid=15734",
    "reason": "page says \"This job has moved or is no longer available\""
   },
   {
@@ -473,22 +473,6 @@
    "reason": "page says \"this position has been filled\""
   },
   {
-   "id": "ochsner-274483",
-   "origin": "curated",
-   "employer": "Ochsner Health",
-   "title": "Sr TA Recruiter - Nursing",
-   "url": "https://careers.ochsner.org/job/new-orleans/sr-ta-recruiter-nursing/47519/100523014848",
-   "reason": "HTTP 404"
-  },
-  {
-   "id": "coffee-11243",
-   "origin": "curated",
-   "employer": "Community Coffee",
-   "title": "Sr. Change Management Specialist",
-   "url": "https://jobs.dayforcehcm.com/en-US/communitycoffee/CANDIDATEPORTAL/jobs/11243",
-   "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
-  },
-  {
    "id": "ceva-talent",
    "origin": "curated",
    "employer": "CEVA Logistics",
@@ -503,6 +487,14 @@
    "title": "Senior Human Resources Business Partner - Houston, TX",
    "url": "https://jobs.cmacgm-group.com/CEVALogistics/job/Houston-Tx-Senior-Human-Resources-Business-Partner-Houston%2C-TX-TX-77001/1409059733/",
    "reason": "redirected to a page without the job (https://jobs.cmacgm-group.com/CEVALogistics/job/Houston-Tx-Senior-Human-Resources-Business-Partner-Houston,-TX-TX-77001/584951-en_GB/)"
+  },
+  {
+   "id": "coffee-11243",
+   "origin": "curated",
+   "employer": "Community Coffee",
+   "title": "Sr. Change Management Specialist",
+   "url": "https://jobs.dayforcehcm.com/en-US/communitycoffee/CANDIDATEPORTAL/jobs/11243",
+   "reason": "could not confirm it is open, and last verified 2026-09-13 (page did not show the job)"
   },
   {
    "id": "ceva-learning",
@@ -521,14 +513,6 @@
    "reason": "HTTP 410"
   },
   {
-   "id": "entergy-1425485100",
-   "origin": "curated",
-   "employer": "Entergy",
-   "title": "Lead HR Business Partner (Nuclear)",
-   "url": "https://jobs.entergy.com/job/St_-Francisville-Lead-HR-Business-Partner-%28Nuclear%29-Loui/1425485100/",
-   "reason": "page says \"posting has expired\""
-  },
-  {
    "id": "womans-manag008209",
    "origin": "curated",
    "employer": "Woman’s Hospital",
@@ -545,12 +529,20 @@
    "reason": "page says \"this position has been filled\""
   },
   {
-   "id": "auto-phillips-66-future-talent-pipeline-sr-advisor-i-commercial-pricing-houston",
+   "id": "entergy-1425485100",
+   "origin": "curated",
+   "employer": "Entergy",
+   "title": "Lead HR Business Partner (Nuclear)",
+   "url": "https://jobs.entergy.com/job/St_-Francisville-Lead-HR-Business-Partner-%28Nuclear%29-Loui/1425485100/",
+   "reason": "page says \"posting has expired\""
+  },
+  {
+   "id": "auto-chevron-tax-counsel-compensation-and-benefits-houston",
    "origin": "crawled",
-   "employer": "Phillips 66",
-   "title": "Future Talent Pipeline - Sr Advisor I, Commercial Pricing",
-   "url": "https://careers.phillips66.com/job/Houston-Future-Talent-Pipeline-Sr-Advisor-I%2C-Commercial-Pricing-TX-77042/1451773400/",
-   "reason": "page says \"this position has been filled\""
+   "employer": "Chevron",
+   "title": "Tax Counsel, Compensation and Benefits",
+   "url": "https://chevron.wd5.myworkdayjobs.com/en-US/jobs/job/Houston-Texas-United-States-of-America/Tax-Counsel--Compensation-and-Benefits_R000072910",
+   "reason": "Workday HTTP 403"
   },
   {
    "id": "laitram-8409",
@@ -558,6 +550,14 @@
    "employer": "Laitram",
    "title": "Employee Development Specialist - People & Culture",
    "url": "https://jobs.laitram.com/en_US/JobsLaitram/JobDetail/Employee-Development-Specialist-People-Culture/8409",
+   "reason": "HTTP 404"
+  },
+  {
+   "id": "ochsner-274483",
+   "origin": "curated",
+   "employer": "Ochsner Health",
+   "title": "Sr TA Recruiter - Nursing",
+   "url": "https://careers.ochsner.org/job/new-orleans/sr-ta-recruiter-nursing/47519/100523014848",
    "reason": "HTTP 404"
   }
  ],
@@ -606,9 +606,7 @@
    "family": null,
    "workMode": "Not specified",
    "summary": "Explore learning and development, performance management, engagement, and talent acquisition through projects and presentations to business leaders.",
-   "checkedAt": "2026-11-20",
-   "checkState": "open",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "cbt-hr-assistant",
@@ -658,9 +656,9 @@
    "family": null,
    "workMode": "Not specified",
    "summary": "Build recruiting, onboarding, employee-record, and communication skills in a small healthcare organization.",
-   "checkedAt": "2026-11-20",
+   "checkedAt": "2026-11-21",
    "checkState": "open",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "goodwill-hr-assistant",
@@ -707,9 +705,9 @@
    "family": null,
    "workMode": "Not specified",
    "summary": "Support onboarding, HR records, benefits, orientation, and training materials while building employee communication skills.",
-   "checkedAt": "2026-11-20",
+   "checkedAt": "2026-11-21",
    "checkState": "open",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "goodwill-navigator",
@@ -755,9 +753,9 @@
    "family": null,
    "workMode": "Not specified",
    "summary": "Use needs assessment, mentoring, goal setting, and progress evaluation to help participants develop and carry out career plans.",
-   "checkedAt": "2026-11-20",
+   "checkedAt": "2026-11-21",
    "checkState": "open",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "goodwill-hvrp",
@@ -804,9 +802,9 @@
    "family": null,
    "workMode": "Not specified",
    "summary": "Build career-coaching and development skills through individualized career plans, employability assessments, and progress monitoring in the HVRP program.",
-   "checkedAt": "2026-11-20",
+   "checkedAt": "2026-11-21",
    "checkState": "open",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "olin-15704",
@@ -855,9 +853,9 @@
    "family": null,
    "workMode": "Not specified",
    "summary": "Connect recruiting and onboarding with performance management, talent reviews, development planning, HR metrics, and total rewards.",
-   "checkedAt": "2026-11-20",
+   "checkedAt": "2026-11-21",
    "checkState": "open",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "exxon-1416173600",
@@ -900,7 +898,7 @@
    "type": "Experienced",
    "summary": "An explicit master’s graduate pathway. Rotations span business HR, employee relations, talent acquisition, employee development, and HR programs.",
    "eligibility": "Recently completed or upcoming master’s degree, with a strong interest in HR or an HR education background. Prior HR internship or business experience preferred; no minimum years stated.",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "exxon-1420305500",
@@ -940,9 +938,9 @@
    "type": "Experienced",
    "summary": "Connects individual development plans, succession planning, early-career development, and workforce analytics to talent deployment. The employer explicitly names HRD as a relevant degree.",
    "eligibility": "Bachelor’s in HR, HRD, business, or related field required. Master’s degree and 3–5 years of relevant professional experience preferred.",
-   "checkedAt": "2026-11-20",
+   "checkedAt": "2026-11-21",
    "checkState": "open",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "exxon-1397449900",
@@ -983,7 +981,7 @@
    "type": "Experienced",
    "summary": "Applies organizational diagnosis, change management, organization design, and team effectiveness to enterprise performance. Suits graduates with prior OD consulting or implementation experience.",
    "eligibility": "Related bachelor’s and 4+ years in organization design, OD, or HR strategy in large matrixed organizations. Organization diagnostics/design experience required; related master’s and Prosci certification preferred.",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "methodist-jr15385",
@@ -1023,9 +1021,9 @@
    "type": "Experienced",
    "summary": "Uses analytical reporting, data integrity, workflow analysis, and recommendations within compensation. Relevant to graduates building a quantitative HR specialization.",
    "eligibility": "Bachelor’s or four additional years of experience in lieu of degree. Three years in project management, IT, business intelligence, decision science, or related work required. HR/project-management certification preferred.",
-   "checkedAt": "2026-11-20",
+   "checkedAt": "2026-11-21",
    "checkState": "open",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "methodist-jr14522",
@@ -1065,9 +1063,9 @@
    "type": "Experienced",
    "summary": "Combines conflict resolution, manager consultation, workforce analysis, and performance-appraisal training. A professional HR partner pathway for graduates with prior HR experience.",
    "eligibility": "Bachelor’s and four years of HR experience, including at least three years at a higher level in employee/labor relations, organizational consulting, recruitment, compensation, or benefits. HR certification preferred.",
-   "checkedAt": "2026-11-20",
+   "checkedAt": "2026-11-21",
    "checkState": "open",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "christus-386558",
@@ -1107,9 +1105,9 @@
    "type": "Experienced",
    "summary": "A practice-focused pathway for experienced LHRD graduates: employee relations, workforce engagement, talent and performance management, and HR service improvement.",
    "eligibility": "Associate degree listed; 4+ years of HR experience preferred. The employer does not require a master’s degree. Professional HR partnership, data analysis, and manager advising are central to the role.",
-   "checkedAt": "2026-11-20",
+   "checkedAt": "2026-11-21",
    "checkState": "open",
-   "lastSeenAt": "2026-11-20"
+   "lastSeenAt": "2026-11-21"
   },
   {
    "id": "auto-exxonmobil-labor-relations-advisor-advanced-baytown",
@@ -1136,7 +1134,7 @@
    "source": "ExxonMobil job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-20",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1164,7 +1162,7 @@
    "source": "State of Louisiana job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-20",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1192,7 +1190,7 @@
    "source": "State of Louisiana job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-19",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1220,7 +1218,7 @@
    "source": "State of Louisiana job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-19",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1248,7 +1246,7 @@
    "source": "Harris County job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-19",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1276,7 +1274,7 @@
    "source": "Dow job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-18",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1304,7 +1302,7 @@
    "source": "State of Louisiana job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-18",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1332,10 +1330,8 @@
    "source": "Cemex job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
-   "verifiedAt": null,
-   "checkedAt": "2026-11-20",
-   "checkState": "open"
+   "lastSeenAt": "2026-11-21",
+   "verifiedAt": null
   },
   {
    "id": "auto-exxonmobil-learning-development-training-advisor-expert-spring",
@@ -1362,35 +1358,7 @@
    "source": "ExxonMobil job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-14",
-   "lastSeenAt": "2026-11-20",
-   "verifiedAt": null
-  },
-  {
-   "id": "auto-state-of-louisiana-human-resources-specialist-baton-rouge",
-   "origin": "crawled",
-   "title": "Human Resources Specialist",
-   "employer": "State of Louisiana",
-   "location": "Baton Rouge, LA",
-   "locality": "Baton Rouge",
-   "area": "Baton Rouge area",
-   "type": "Experienced",
-   "level": "Professional",
-   "family": "relations",
-   "focus": "HRM",
-   "tracks": [
-    "graduate"
-   ],
-   "workMode": "Not specified",
-   "salary": "$4,099–$8,044 per month",
-   "deadlineISO": "2026-11-22",
-   "deadline": "2026-11-22",
-   "postedAt": "2026-11-13",
-   "summary": "The mission of the Louisiana Department of Health is to protect and promote health and to ensure access to medical, preventive, and rehabilitative services for all residents of the State of Louisiana. Learn more about Louisiana Department of Health Join LDH’s Employee Relations…",
-   "url": "https://www.governmentjobs.com/careers/louisiana/jobs/5548455-0",
-   "source": "State of Louisiana job board (neogov)",
-   "status": "open",
-   "firstSeenAt": "2026-11-14",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1418,10 +1386,36 @@
    "source": "Cemex job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
-   "verifiedAt": null,
-   "checkedAt": "2026-11-20",
-   "checkState": "open"
+   "lastSeenAt": "2026-11-21",
+   "verifiedAt": null
+  },
+  {
+   "id": "auto-state-of-louisiana-human-resources-specialist-baton-rouge",
+   "origin": "crawled",
+   "title": "Human Resources Specialist",
+   "employer": "State of Louisiana",
+   "location": "Baton Rouge, LA",
+   "locality": "Baton Rouge",
+   "area": "Baton Rouge area",
+   "type": "Experienced",
+   "level": "Professional",
+   "family": "relations",
+   "focus": "HRM",
+   "tracks": [
+    "graduate"
+   ],
+   "workMode": "Not specified",
+   "salary": "$4,099–$8,044 per month",
+   "deadlineISO": "2026-11-22",
+   "deadline": "2026-11-22",
+   "postedAt": "2026-11-13",
+   "summary": "The mission of the Louisiana Department of Health is to protect and promote health and to ensure access to medical, preventive, and rehabilitative services for all residents of the State of Louisiana. Learn more about Louisiana Department of Health Join LDH’s Employee Relations…",
+   "url": "https://www.governmentjobs.com/careers/louisiana/jobs/5548455-0",
+   "source": "State of Louisiana job board (neogov)",
+   "status": "open",
+   "firstSeenAt": "2026-11-14",
+   "lastSeenAt": "2026-11-21",
+   "verifiedAt": null
   },
   {
    "id": "auto-state-of-louisiana-human-resources-analyst-c-specialist-ohc-training-admin-baton-rouge",
@@ -1448,7 +1442,7 @@
    "source": "State of Louisiana job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-13",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1476,7 +1470,7 @@
    "source": "Harris County job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-14",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1504,7 +1498,7 @@
    "source": "ExxonMobil job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-12",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1532,7 +1526,7 @@
    "source": "ExxonMobil job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-17",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1560,7 +1554,7 @@
    "source": "Dow job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-11",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1588,7 +1582,7 @@
    "source": "Boyd Gaming job board (smartrecruiters)",
    "status": "open",
    "firstSeenAt": "2026-11-11",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1616,7 +1610,7 @@
    "source": "ExxonMobil job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1644,7 +1638,7 @@
    "source": "State of Louisiana job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-10",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1672,7 +1666,7 @@
    "source": "State of Louisiana job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-10",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1700,7 +1694,7 @@
    "source": "Harris County job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-10",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1728,9 +1722,9 @@
    "source": "ExxonMobil job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null,
-   "checkedAt": "2026-11-20",
+   "checkedAt": "2026-11-21",
    "checkState": "open"
   },
   {
@@ -1758,7 +1752,7 @@
    "source": "Marathon Petroleum job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-07",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1786,7 +1780,7 @@
    "source": "Hewlett Packard Enterprise job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1814,7 +1808,7 @@
    "source": "Harris County job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1842,7 +1836,7 @@
    "source": "Harris County job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1870,7 +1864,7 @@
    "source": "State of Louisiana job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1898,7 +1892,7 @@
    "source": "Hewlett Packard Enterprise job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1926,7 +1920,7 @@
    "source": "City of New Orleans job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1954,7 +1948,7 @@
    "source": "Hewlett Packard Enterprise job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -1982,7 +1976,7 @@
    "source": "Boyd Gaming job board (smartrecruiters)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2010,7 +2004,7 @@
    "source": "Marathon Petroleum job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2038,7 +2032,7 @@
    "source": "State of Louisiana job board (neogov)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2066,7 +2060,35 @@
    "source": "Hilcorp Energy Company job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-13",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
+   "verifiedAt": null
+  },
+  {
+   "id": "auto-ochsner-health-talent-outreach-specialist-new-orleans",
+   "origin": "crawled",
+   "title": "Talent Outreach Specialist",
+   "employer": "Ochsner Health",
+   "location": "New Orleans, LA",
+   "locality": "New Orleans",
+   "area": "New Orleans area",
+   "type": "Experienced",
+   "level": "Professional",
+   "family": "relations",
+   "focus": "HRM",
+   "tracks": [
+    "graduate"
+   ],
+   "workMode": "Not specified",
+   "salary": "Not posted",
+   "deadlineISO": null,
+   "deadline": "Not posted",
+   "postedAt": null,
+   "summary": "",
+   "url": "https://ochsner.wd1.myworkdayjobs.com/en-US/Ochsner/job/New-Orleans---New-Orleans-Region---Louisiana/Talent-Outreach-Specialist_REQ_00279852",
+   "source": "Ochsner Health job board (workday)",
+   "status": "open",
+   "firstSeenAt": "2026-11-21",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2094,7 +2116,7 @@
    "source": "Ochsner Health job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-12",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2122,19 +2144,19 @@
    "source": "Ochsner Health job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-12",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
-   "id": "auto-chevron-tax-counsel-compensation-and-benefits-houston",
+   "id": "auto-shell-senior-legal-counsel-us-benefits-houston",
    "origin": "crawled",
-   "title": "Tax Counsel, Compensation and Benefits",
-   "employer": "Chevron",
+   "title": "Senior Legal Counsel US Benefits",
+   "employer": "Shell",
    "location": "Houston, TX",
    "locality": "Houston",
    "area": "Houston area",
    "type": "Experienced",
-   "level": "Professional",
+   "level": "Senior",
    "family": "rewards",
    "focus": "HRM",
    "tracks": [
@@ -2146,11 +2168,11 @@
    "deadline": "Not posted",
    "postedAt": null,
    "summary": "",
-   "url": "https://chevron.wd5.myworkdayjobs.com/en-US/jobs/job/Houston-Texas-United-States-of-America/Tax-Counsel--Compensation-and-Benefits_R000072910",
-   "source": "Chevron job board (workday)",
+   "url": "https://shell.wd3.myworkdayjobs.com/en-US/ShellCareers/job/Texas---Houston---Woodcreek/Senior-Legal-Counsel-US-Benefits_R215306",
+   "source": "Shell job board (workday)",
    "status": "open",
-   "firstSeenAt": "2026-11-07",
-   "lastSeenAt": "2026-11-20",
+   "firstSeenAt": "2026-11-21",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2178,7 +2200,7 @@
    "source": "Baker Hughes job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2206,7 +2228,7 @@
    "source": "Westlake job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2234,7 +2256,7 @@
    "source": "Westlake job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2262,7 +2284,7 @@
    "source": "Westlake job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-10",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2290,7 +2312,7 @@
    "source": "Occidental job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2318,7 +2340,7 @@
    "source": "Occidental job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2346,7 +2368,7 @@
    "source": "Hewlett Packard Enterprise job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2374,7 +2396,7 @@
    "source": "Hewlett Packard Enterprise job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2402,7 +2424,7 @@
    "source": "Hewlett Packard Enterprise job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2430,7 +2452,7 @@
    "source": "Hewlett Packard Enterprise job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2458,7 +2480,7 @@
    "source": "Hewlett Packard Enterprise job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-16",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2486,7 +2508,7 @@
    "source": "Hewlett Packard Enterprise job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2514,7 +2536,7 @@
    "source": "Phillips 66 job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-19",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2542,7 +2564,7 @@
    "source": "Entergy job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-04",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2570,7 +2592,7 @@
    "source": "Entergy job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-12",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2598,35 +2620,7 @@
    "source": "Entergy job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-18",
-   "lastSeenAt": "2026-11-20",
-   "verifiedAt": null
-  },
-  {
-   "id": "auto-entergy-analyst-sr-employee-experience-new-orleans",
-   "origin": "crawled",
-   "title": "Analyst, Sr (Employee Experience)",
-   "employer": "Entergy",
-   "location": "New Orleans, LA",
-   "locality": "New Orleans",
-   "area": "New Orleans area",
-   "type": "Experienced",
-   "level": "Senior",
-   "family": "relations",
-   "focus": "HRM",
-   "tracks": [
-    "graduate"
-   ],
-   "workMode": "Not specified",
-   "salary": "Not posted",
-   "deadlineISO": null,
-   "deadline": "Not posted",
-   "postedAt": null,
-   "summary": "",
-   "url": "https://jobs.entergy.com/job/New-Orleans-Analyst%2C-Sr-%28Employee-Experience%29-Loui/1447804400/",
-   "source": "Entergy job board (successfactors)",
-   "status": "open",
-   "firstSeenAt": "2026-11-12",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2654,7 +2648,35 @@
    "source": "Entergy job board (successfactors)",
    "status": "open",
    "firstSeenAt": "2026-11-05",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
+   "verifiedAt": null
+  },
+  {
+   "id": "auto-entergy-analyst-sr-employee-experience-new-orleans",
+   "origin": "crawled",
+   "title": "Analyst, Sr (Employee Experience)",
+   "employer": "Entergy",
+   "location": "New Orleans, LA",
+   "locality": "New Orleans",
+   "area": "New Orleans area",
+   "type": "Experienced",
+   "level": "Senior",
+   "family": "relations",
+   "focus": "HRM",
+   "tracks": [
+    "graduate"
+   ],
+   "workMode": "Not specified",
+   "salary": "Not posted",
+   "deadlineISO": null,
+   "deadline": "Not posted",
+   "postedAt": null,
+   "summary": "",
+   "url": "https://jobs.entergy.com/job/New-Orleans-Analyst%2C-Sr-%28Employee-Experience%29-Loui/1447804400/",
+   "source": "Entergy job board (successfactors)",
+   "status": "open",
+   "firstSeenAt": "2026-11-12",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null
   },
   {
@@ -2682,9 +2704,9 @@
    "source": "Ochsner Health job board (workday)",
    "status": "open",
    "firstSeenAt": "2026-11-10",
-   "lastSeenAt": "2026-11-20",
+   "lastSeenAt": "2026-11-21",
    "verifiedAt": null,
-   "checkedAt": "2026-11-20",
+   "checkedAt": "2026-11-21",
    "checkState": "open"
   }
  ]
